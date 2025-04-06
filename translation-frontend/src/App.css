@@ -1,0 +1,92 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Light Theme Styles */
+body.light {
+  background-color: #ffffff;  /* Light mode background */
+  color: #333;  /* Light mode text color */
+}
+
+.App.light {
+  background-color: #ffffff;
+}
+
+.App.light h1, .App.light h3 {
+  color: #4A90E2;  /* Light blue for headings */
+}
+
+.App.light .btn-primary {
+  background-color: #4A90E2;
+  border-color: #4A90E2;
+}
+
+.App.light .btn-secondary {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+
+.App.light .form-control {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.App.light .lead {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Dark Theme Styles */
+body.dark {
+  background-color: #333;  /* Dark mode background */
+  color: #f4f7fa;  /* Light text color for dark mode */
+}
+
+.App.dark {
+  background-color: #333;
+}
+
+.App.dark h1, .App.dark h3 {
+  color: #e0e0e0;  /* Light color for dark mode headings */
+}
+
+.App.dark .btn-primary {
+  background-color: #357ABD;  /* Blue button color for dark mode */
+  border-color: #357ABD;
+}
+
+.App.dark .btn-secondary {
+  background-color: #555;  /* Dark button color */
+  border-color: #555;
+}
+
+.App.dark .form-control {
+  background-color: #444;  /* Dark background for input fields */
+  border: 1px solid #666;
+  color: #f4f7fa;
+}
+
+.App.dark .lead {
+  font-size: 18px;
+  color: #f4f7fa;  /* Light text color for the result */
+}
+
+button:hover {
+  background-color: #357ABD; /* Darker blue for hover effect */
+}
+
+/* Animation for Translation Result */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.translate-result {
+  animation: fadeIn 1s ease-in-out;
+}
